@@ -1,0 +1,23 @@
+{
+  "name": "AdsApp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx nodemon server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "4.17.1",
+    "express-session": "^1.18.0",
+    "json-server": "0.17.0",
+    "mongodb": "4.17.0",
+    "mongoose": "7.4.3",
+    "multer": "1.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
