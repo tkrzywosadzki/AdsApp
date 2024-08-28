@@ -28,6 +28,7 @@ exports.postRegister = async (req, res) => {
             res.status(400).send({ message: 'Bad request' });
         }
     } catch (err) {
+        deleteFile(req.file.path);
         res.status(500).send({ message: err.message });
     }
 };
@@ -57,10 +58,6 @@ exports.postLogin = async(req,res) => {
     } catch(err) {
         res.status(500).send({ message: err.message });
     }
-};
-
-exports.getCurrentUser = async(req, res) => {
-
 };
 
 exports.getUser = async(req, res) => {
